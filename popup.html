@@ -1,0 +1,94 @@
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Safety Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Website Safety Check</h3>
+
+  <p id="url">Checking...</p>
+
+  <button id="checkBtn">Check Website</button>
+
+  <div id="result"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Website Safety Checker</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Help Icon -->
+<div class="help-icon" id="helpBtn">?</div>
+
+<div class="title">
+Website Safety Checker
+</div>
+
+<button id="scanBtn">RUN PRIVACY TEST ...</button>
+
+<!-- Safe Browsing -->
+<div class="card" id="safeBrowsingStatus">
+Checking Safe Browsing...
+</div>
+
+<!-- User IP -->
+<div class="card">
+
+<h4>Your IP Address</h4>
+
+<div class="row">
+<span id="userIP" class="text-content">Loading...</span>
+<button id="copyIP" class="copy-btn" title="Copy IP">⧉</button>
+</div>
+
+</div>
+
+<!-- Active Tab -->
+<div class="card">
+
+<h4>Active Tab</h4>
+
+<div class="row">
+<span id="url" class="text-content">Loading...</span>
+<button id="copyURL" class="copy-btn" title="Copy URL">⧉</button>
+</div>
+
+<div class="status-row">
+<span class="icon">🛡</span>
+<span id="result">Waiting for scan...</span>
+</div>
+
+<div class="status-row">
+<span class="icon">📍</span>
+<span id="siteIP"></span>
+</div>
+
+</div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
